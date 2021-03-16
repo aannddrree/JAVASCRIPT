@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Consultar CEP via AJAX com jQuery</title>
+</head>
+<body>
+	<div>
+		<form>
+            <table>
+                <tr>
+                    <th>CEP</th>
+                    <th>Rua</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado (UF)</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="cep" name="cep" placeholder="CEP" style="background-color: yellow;" /></td>
+                    <td><input type="text" id="logradouro" name="logradouro" placeholder="Logradouro" size="70"/></td>
+                    <td><input type="text" id="bairro" name="bairro" placeholder="Bairro" /></td>
+                    <td><input type="text" id="localidade" name="localidade" placeholder="Cidade" /></td>
+                    <td><input type="text" id="uf" name="uf" placeholder="Uf" /></td>
+                    <td><input type="button" value="Consultar" onclick="findCEP()"></td>
+                </tr>
+            </table>
+		</form>
+	</div>	
+	<script type="text/javascript" src="cep.js"></script>	
+</body>
+</html>
